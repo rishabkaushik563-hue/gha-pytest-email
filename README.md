@@ -46,13 +46,13 @@ Per the Dockerfile layer order:
 
 ### How Cache Was Verified
 1. Ran the workflow twice on `task2` with no code changes (second run via empty commit).
-2. Compared build step duration: Run 1 = `<fill in actual seconds>`, Run 2 = `<fill in actual seconds>`.
+2. Compared build step duration: Run 1 = `15s`, Run 2 = `18s`.
 3. Confirmed `CACHED` markers in the second run's build log for the `pip install` and `WORKDIR` layers.
 4. Confirmed two distinct SHA-tagged images in ECR (`pytest-app` repository → Image tags).
 
 ### Workflow Runs
-- Run 1 (initial build): `<paste workflow run URL>`
-- Run 2 (cached build): `<paste workflow run URL>`
+- Run 1 (initial build): `https://github.com/rishabkaushik563-hue/gha-pytest-email/actions/runs/28884425900`
+- Run 2 (cached build): `https://github.com/rishabkaushik563-hue/gha-pytest-email/actions/runs/28884643382`
 
 ### Security
 - No AWS access keys committed or stored as secrets.
