@@ -13,9 +13,9 @@ pytest tests/ -v
 ## GitHub Secrets required
 | Secret | Value |
 |---|---|
-| EMAIL_USERNAME | Gmail address |
-| EMAIL_PASSWORD | Gmail App Password (16 chars) |
-| EMAIL_TO | Recipient email address |
+| EMAIL_USERNAME | rishabkaushik563@gmail.com |
+
+| EMAIL_TO | rishabkaushik563@gmail.com |
 
 
 ---
