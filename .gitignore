@@ -1,0 +1,4 @@
+﻿__pycache__/
+*.pyc
+test-log.txt
+.pytest_cache/
